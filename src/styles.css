@@ -232,3 +232,10 @@
   visibility: hidden !important;
   pointer-events: none !important;
 }
+/* Hide Lovable badge container and all child elements */
+#lovable-badge,
+#lovable-badge * {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}

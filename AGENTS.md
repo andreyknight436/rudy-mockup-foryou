@@ -28,3 +28,9 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Site copy/data lives in `src/lib/content.ts`, brand constants in `src/lib/site.ts`, image URLs in `src/lib/assets.ts` — pages read from these so names and claims stay consistent.
+- Every service carries a status (planned / in development / vision / open) via `StatusBadge` — the venture is pre-launch and must never read as operational.
+- The quote form is front-end only (validated by `src/lib/inquiry.ts`); its confirmation must say nothing was sent until a real destination is connected.
+- Each route sets its own `head()` via `pageHead()` in `src/lib/seo.ts`.
